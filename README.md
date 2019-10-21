@@ -2,13 +2,13 @@
 
 Creates Terraform Cloud configuration for the [AWS VPC module](https://github.com/cjthorpe/terraform-module-aws-vpc).
 
-*N.B.* - requires Terraform v0.12.
+**N.B.** - requires Terraform v0.12.
 
 ## Prerequisites
 
 Requires that a [Terraform Cloud](app.terraform.io) account and an existing organisation already be created.
 
-The account must be pre-configured to be able to access a VCS via OAUTH, as this is required when creating the Terraform Cloud *workspace*:
+The account must be pre-configured to be able to access a VCS via OAUTH, as this is required when creating the Terraform Cloud **workspace**:
 
 ```bash
 resource "tfe_workspace" "production" {
@@ -25,23 +25,23 @@ resource "tfe_workspace" "production" {
 ## Deployment
 
 ```bash
-cd terraform
+$ cd terraform
 ```
 
 Initialise the module(s).
 
 ```bash
-terraform init
+$ terraform init
 ```
 
 Check for changes/errors.
 
 ```bash
-terraform plan
+$ terraform plan
 ```
 
 Execute the deployment.
 
 ```bash
-terraform apply
+$ terraform apply
 ```
